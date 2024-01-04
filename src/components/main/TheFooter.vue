@@ -4,7 +4,7 @@ const imageFolderPath = '../src/assets/images/'
 const socialIcons = reactive(['facebook.svg', 'instagram.svg', 'twitter.svg', 'viber.svg'])
 </script>
 <template>
-  <footer class="footer" id="contacts">
+  <footer class="footer" id="contacts" container>
     <div class="main-content">
       <div class="footer-wrapper">
         <div class="footer-logo">
@@ -45,7 +45,7 @@ const socialIcons = reactive(['facebook.svg', 'instagram.svg', 'twitter.svg', 'v
 .footer {
   display: inline-flex;
   height: 252px;
-  padding: 50px 150px;
+  padding: 50px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,7 @@ const socialIcons = reactive(['facebook.svg', 'instagram.svg', 'twitter.svg', 'v
   flex-shrink: 0;
   background: #2c2d5b;
   margin-top: 44px;
+  width: 100%;
 }
 .footer-wrapper {
   display: flex;

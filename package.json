@@ -2,7 +2,6 @@
   "name": "mageap",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://gladja.github.io/tobi-vue3/",
   "type": "module",
   "scripts": {
     "dev": "vite",

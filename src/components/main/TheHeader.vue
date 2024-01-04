@@ -2,7 +2,7 @@
 import { reactive } from 'vue'
 
 const navArr = reactive(['Як це Працює?', 'Про нас', 'Контакти'])
-const linkArr = ['/#work', '#about', '#contacts']
+const linkArr = ['/tobi-vue3/#work', '#about', '#contacts']
 </script>
 
 <template>
