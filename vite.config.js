@@ -4,12 +4,12 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 // import injectHTML from 'vite-plugin-html-inject'
-import FullReload from 'vite-plugin-full-reload'
+// import FullReload from 'vite-plugin-full-reload'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   root: 'src',
-  plugins: [vue(), FullReload(['./src/**/**.html'])],
+  plugins: [vue()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
