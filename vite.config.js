@@ -8,17 +8,17 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  root: 'src',
+  base: '/tobi-vue3/',
   plugins: [vue()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  build: {
-    rollupOptions: {
-      input: glob.sync('./src/*.html')
-    },
-    outDir: '../dist'
   }
+  // build: {
+  //   rollupOptions: {
+  //     input: glob.sync('./src/*.html')
+  //   },
+  //   outDir: '../dist'
+  // }
 })
